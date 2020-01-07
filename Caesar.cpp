@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string message ="";
+char message[];
 string Caesar::encode(){
 
 	for (int i = 0; i < message.size(); ++i)
