@@ -3,10 +3,11 @@
 
 class Vigenere : public encrypt{
 	public :
-		Vigenere();
-		void create_key(int length, int *tab);
+		Vigenere(int lengthKey, int *key);
+		void encode();
+		void decode();
 	private :
-		int *key=nullptr;
+		int *m_key=nullptr;
 
 }
 
