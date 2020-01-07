@@ -3,10 +3,10 @@
 
 using namespace std;
 
-
+char message[];
 string Caesar::encode(){
 
-	for (int i = 0; i < message[i]; ++i)
+	for (int i = 0; i < message.size(); ++i)
 	{
 		if (message[i]>='A'&& message[i]<='Z')
 		{
@@ -27,7 +27,7 @@ string Caesar::encode(){
 }
 
 string Caesar::decode(){
-	for (int i = 0; i < message[i]; ++i)
+	for (int i = 0; i < message.size(); ++i)
 	{
 		if (message[i]>='A'&& message[i]<='Z')
 		{
