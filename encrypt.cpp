@@ -28,9 +28,9 @@ bool Encrypt::write(bool isPlain, std::string filename){
 	std::ofstream file(filename.c_str());
 	if(file){
 		if(isPlain == false){
-			file<<m_plain;
-		}else{
 			file<<m_cipher;
+		}else{
+			file<<m_plain;
 		}
 		file.close();
 		return true;

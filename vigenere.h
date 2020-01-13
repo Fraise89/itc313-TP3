@@ -1,14 +1,15 @@
 #ifndef VIGENERE_H
 #define VIGENERE_H
 
-class Vigenere : public encrypt{
+#include "encrypt.h"
+class Vigenere : public Encrypt{
 	public :
-		Vigenere(int lengthKey, int *key);
+		Vigenere(int lengthKey, char *key);
 		void encode();
 		void decode();
 	private :
 		int *m_key=nullptr;
-
-}
+		int m_lengthKey;
+};
 
 #endif
