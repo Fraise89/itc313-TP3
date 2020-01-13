@@ -5,7 +5,11 @@ CXXFLAGS   = -Wall -Wextra -std=c++11
 DEPFLAGS   = -MMD
 LDFLAGS    = 
 # Replace tp.cpp with the cpp files that need to be compiled
+<<<<<<< HEAD:Makefile.vigenere
 SRCS       = vigenere.cpp main3.cpp encrypt.cpp
+=======
+SRCS       = Caesar.cpp main2.cpp encrypt.cpp
+>>>>>>> 65a63ee0eb198b0d42fc749b840e7995c61dd750:Makefile.caesar
 OBJS       = $(SRCS:.cpp=.o)
 # Replace tp_main with the name you want to give to your executable file
 TARGET     = main3
