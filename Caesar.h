@@ -10,8 +10,7 @@ using namespace std;
 class Caesar: public Encrypt {
 
 public:
-	Caesar(int valeur=n): m_valeur(valeur);
-	int
+	Caesar(int valeur=3): m_valeur(valeur){}
 	string encode();
 	string decode();
 
@@ -20,3 +19,4 @@ private:
 
 	
 };
+#endif
